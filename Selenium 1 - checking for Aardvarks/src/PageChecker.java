@@ -16,6 +16,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,7 +29,8 @@ public class PageChecker {
         // Create a new instance of the Firefox driver
         // This copies all the information about the page we've loaded into
         // the page_item object
-        WebDriver page_item = new FirefoxDriver();
+        //WebDriver page_item = new FirefoxDriver();
+    	WebDriver page_item = new ChromeDriver();
        
         // Open our target page ... a previous blog article
         page_item.get("http://testsheepnz.blogspot.co.nz/2016/07/im-hoping-that-this-blog-will-have-most.html");
